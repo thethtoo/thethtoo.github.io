@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CloudSpace</title>
+  <link rel="stylesheet" href="./dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="./index.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="./dist/js/bootstrap.js"></script>
+
+
+</head>
+<body>
+   <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="./index.html" >CloudSpace</a>
+        </div>
+        <div class="navbar-collapse collapse">
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" data-toggle="modal" data-target="#myModal">包子</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#myModal2">進入後台</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+    <!--/.後台版面開始 -->
+    <div class="Account-container">
+      <div class="row">
+        <h1>管理頁面</h1>
+      </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Nav tabs category -->
+                    <ul class="nav nav-tabs faq-cat-tabs">
+                        <li class="active"><a href="#faq-cat-1" data-toggle="tab">個人資料</a></li>
+                        <li><a href="#faq-cat-2" data-toggle="tab">刊登記錄</a></li>
+                        <li><a href="#faq-cat-3" data-toggle="tab">租借記錄</a></li>
+                        <li><a href="#faq-cat-4" data-toggle="tab">訊息通知</a></li>
+                        <li><a href="#faq-cat-5" data-toggle="tab">檔期查詢</a></li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content faq-cat-content">
+                        <div class="tab-pane active in fade" id="faq-cat-1">
+                          <div class="panel-group" id="accordion-cat-1">
+                                <div class="panel panel-default panel-faq">
+                                    <div class="panel-heading">
+                                      <div class="row ">
+                                          <a1><span class="glyphicon glyphicon-lock"></span>個人資料</a>
+                                      </div>
+                                       <div class="col-sm-2 col-md-2">
+                                          <img src="http://i.imgur.com/LfvmQDf.jpg"
+                                          alt="" class="img-rounded img-responsive" />
+                                        </div>
+
+                                      <div class="col-sm-4 col-md-6">
+                                          <ul class="list-group">
+                                            <li class="list-group-item-change">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="checkbox" checked="checked"/>
+                                                    <label for="checkbox">
+                                                        帳號:azxds234@yahoo.com.tw
+                                                    </label>
+                                                </div>
+
+                                            </li>
+                                            <li class="list-group-item-change">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="checkbox2"checked="checked" />
+                                                    <label for="checkbox2">
+                                                        密碼:********
+                                                    </label>
+                                                </div>
+                                              <div class="pull-right action-buttons">
+                                                    <a ><span class="glyphicon glyphicon-pencil"></span></a>
+                                                    <a class="trash"><span class="glyphicon glyphicon-trash"></span></a>
+                                              </div>
+                                            </li>
+                                            <li class="list-group-item-change">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="checkbox3" checked="checked"/>
+                                                    <label for="checkbox3">
+                                                        暱稱:包子    先生/小姐
+                                                    </label>
+                                                </div>
+                                                <div class="pull-right action-buttons">
+                                                    <a ><span class="glyphicon glyphicon-pencil"></span></a>
+                                                    <a class="trash"><span class="glyphicon glyphicon-trash"></span></a>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item-change">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="checkbox4" checked="checked"/>
+                                                    <label for="checkbox4">
+                                                        聯絡方式:0926069356
+                                                    </label>
+                                                </div>
+                                                <div class="pull-right action-buttons">
+                                                    <a ><span class="glyphicon glyphicon-pencil"></span></a>
+                                                    <a class="trash"><span class="glyphicon glyphicon-trash"></span></a>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item-change">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="checkbox5" />
+                                                    <label for="checkbox5">
+                                                        <a>地址: <input type="text" name="firstname" value="" class="form-control input-sm input-left" placeholder=""  /></a>
+                                                    </label>
+                                                </div>
+                                               <div class="pull-right action-buttons">
+                                                    <a ><span class="glyphicon glyphicon-pencil"></span></a>
+                                                    <a class="trash"><span class="glyphicon glyphicon-trash"></span></a>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item-change move1">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" id="checkbox6" />
+                                                    <label for="checkbox6">
+                                                        fb: <input type="text" name="firstname" value="" class="form-control input-sm input-left" placeholder=""  />
+                                                    </label>
+                                                </div>
+                                               <div class="pull-right action-buttons">
+                                                    <a ><span class="glyphicon glyphicon-pencil"></span></a>
+                                                    <a class="trash"><span class="glyphicon glyphicon-trash"></span></a>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item-change move-top40px">
+                                              <div class="table">
+                                                <th>
+                                                  <tr>
+                                                      <label for="checkbox7">
+                                                        付款銀行代號: <input type="text" name="firstname" value="" class="form-control input-sm input-left100px" placeholder=""  />
+                                                    </label>
+                                                  </tr>
+                                                  <tr>
+                                                    <label for="checkbox8" class="lable-left">
+                                                        銀行帳號: <input type="text" name="firstname" value="" class="form-control input-sm input-left2100px" placeholder=""  />
+                                                    </label>
+                                                  </tr>
+                                                </th>
+                                              </div>
+                                            </li>
+                                        </ul>
+                                      </div>
+                                      <div class="col-sm-4 col-md-6">
+                                        <button class="btn btn-success">儲存</button>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="faq-cat-2">
+                            <div class="panel-group" id="accordion-cat-2">
+
+                                <div class="panel panel-default panel-faq">
+                                    <div class="panel-heading">
+                                       <a1><span class="glyphicon glyphicon-pencil"></span>刊登記錄</a>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                  <div class="col-md-2">
+                                    <nav class="nav-sidebar">
+                                        <ul class="nav nav-stacked pull-right">
+                                            <li class="active"><a href="#tab_a" data-toggle="pill">刊登中的場地</a></li>
+                                            <li><a href="#tab_b" data-toggle="pill">審核中的場地</a></li>
+                                            <li><a href="#tab_c" data-toggle="pill">出租中的場地</a></li>
+                                            <li><a href="javascript:;">已下架場地</a></li>
+                                            <li class="nav-divider"></li>
+                                        </ul>
+                                    </nav>
+                                  </div>
+                                  <div class="tab-content col-md-10">
+                                    <div class="tab-pane active" id="tab_a">
+                                         <div class="col-md-9 barbar2">
+                                            <table class="table table-hover">
+                                              <tr>
+                                                <th>場地編號</th>
+                                                <th>狀態</th>
+                                                <th>刊登時間</th>
+                                                <th width="50%;">場地</th>
+                                                <th>價錢</th>
+                                                <th>訂單</th>
+                                              </tr>
+                                              <tr class="success">
+                                                <th><input type="checkbox" id="checkbox6" />A00001</th>
+                                                <th>刊登中</th>
+                                                <th>2013/10/29<br/>18:39:00</th>
+                                                <th width="50%;">龍華科技大學S棟7樓701</th>
+                                                <th>每小時:399 <br/> 一天2000</th>
+                                                <th>0</th>
+                                              </tr>
+                                              <tr class="active">
+                                                <th><input type="checkbox" id="checkbox6" />A00002</th>
+                                                <th>刊登中</th>
+                                                <th>2013/10/29<br/>18:39:00</th>
+                                                <th width="50%;">龍華科技大學S棟7樓702</th>
+                                                <th>每小時:399 <br/> 一天2000</th>
+                                                <th>0</th>
+                                              </tr>
+                                              <tr class="danger">
+                                               <th><input type="checkbox" id="checkbox6" />A00003</th>
+                                                <th>刊登中</th>
+                                                <th>2013/10/29<br/>18:39:00</th>
+                                                <th width="50%;">龍華科技大學S棟7樓703</th>
+                                                <th>每小時:399 <br/> 一天2000</th>
+                                                <th>0</th>
+                                              </tr>
+                                              <tr class="active">
+                                               <th><input type="checkbox" id="checkbox6" />A00003</th>
+                                                <th>刊登中</th>
+                                                <th>2013/10/29<br/>18:39:00</th>
+                                                <th width="50%;">龍華科技大學S棟7樓704</th>
+                                                <th>每小時:399 <br/> 一天2000</th>
+                                                <th>0</th>
+                                              </tr>
+                                              <tr class="danger">
+                                               <th><input type="checkbox" id="checkbox6" />A00003</th>
+                                                <th>刊登中</th>
+                                                <th>2013/10/29<br/>18:39:00</th>
+                                                <th width="50%;">龍華科技大學S棟7樓705</th>
+                                                <th>每小時:399 <br/> 一天2000</th>
+                                                <th>0</th>
+                                              </tr>
+                                            </table>
+                                          </div>
+                                          <div class="col-md-9">
+                                              <input type="checkbox" id="checkbox"/>全選
+                                              <button>下架</button>
+                                              <button>取消</button>
+                                           </div>
+                                    </div>
+                                    <!-- 審核中資料區塊1開始 -->
+                                    <div class="tab-pane" id="tab_b">
+                                         <div class="col-md-9 barbar2">
+                                            <table class="table table-hover">
+                                              <tr>
+                                                <th>場地編號</th>
+                                                <th>狀態</th>
+                                                <th width="50%;">場地</th>
+                                                <th>價錢</th>
+                                                <th>租借者</th>
+                                              </tr>
+                                              <tr>
+                                                <th>A00005</th>
+                                                <th>審核中</th>
+                                                <th width="50%;">龍華科技大學 S棟7樓711</th>
+                                                <th>$2394</th>
+                                                <th>子麒</th>
+                                              </tr>
+                                            </table>
+                                              <div class="row">
+                                                <div class="col-md-2">
+                                                  <img id="baozi"src="http://i.imgur.com/r9YSgTL.jpg">
+                                                </div>
+                                                <div class="col-md-10">
+                                                  租借資訊<br/>
+                                                  名稱:子麒<br/>
+                                                  信箱:pups210280@yahoo.com.tw<br/>
+                                                  連絡電話:091111111<br/>
+                                                  租用時間:213/11/3 <br/>6:00AM~11:00AM
+                                                </div>
+                                              </div>
+                                              <div class="row">
+                                                <div class="col-md-7">
+                                                  <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="badger-left" data-badger="留言板">
+                                                          您好 付款瞜!
+                                                          <br/>
+                                                          <br/>
+                                                          <br/>
+                                                          <br/>
+                                                          <br/>
+                                                        </div>
+                                                        <div class="badger-left" data-badger="輸入框">
+                                                          <input id="EnterInput"type="text">
+                                                          <button type="button" class="btn btn-primary btn-sm">送出</button>
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-5">
+                                                  <p>請確認之後在點擊通過</p>
+                                                  <button type="button" class="btn btn-primary btn-lg">通過</button>
+                                                </div>
+                                              </div>
+                                            <!-- 審核中資料區塊1結束 -->
+
+                                         </div>
+                                    </div>
+                                    <!-- 出租中區塊開始 -->
+                                    <div class="tab-pane" id="tab_c">
+                                      <div class="col-md-9 barbar2">
+                                            <table class="table table-hover">
+                                              <tr>
+                                                <th>場地編號</th>
+                                                <th>狀態</th>
+                                                <th>交易完成</th>
+                                                <th width="50%;">場地</th>
+                                                <th>價錢</th>
+                                                <th>租借者</th>
+                                              </tr>
+                                              <tr>
+                                                <th>A00005</th>
+                                                <th>出租中</th>
+                                                <th>2013/10/29</th>
+                                                <th width="50%;">龍華科技大學 S樓7棟711</th>
+                                                <th>$2394</th>
+                                                <th>子麒</th>
+                                              </tr>
+                                            </table>
+                                            <div class="row">
+                                                <div class="col-md-2">
+                                                  <img id="baozi"src="http://i.imgur.com/r9YSgTL.jpg">
+                                                </div>
+                                                <div class="col-md-10">
+                                                  租借資訊<br/>
+                                                  名稱:子麒<br/>
+                                                  信箱:pups210280@yahoo.com.tw<br/>
+                                                  連絡電話:091111111<br/>
+                                                  租用時間:213/11/3 <br/>6:00AM~11:00AM
+                                                </div>
+                                              </div>
+                                             <div class="row">
+                                                <div class="col-md-7">
+                                                  <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="badger-left" data-badger="留言板">
+                                                          您好 付款瞜!
+                                                          <br/>
+                                                          <br/>
+                                                          <br/>
+                                                          <br/>
+                                                          <br/>
+                                                        </div>
+                                                        <div class="badger-left" data-badger="輸入框">
+                                                          <input id="EnterInput"type="text">
+                                                          <button type="button" class="btn btn-primary btn-sm">送出</button>
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-5">
+                                                  <p>注意:可租借時間內留言給租借者</p>
+                                                </div>
+                                              </div>
+                                      </div>
+                                    </div>
+                                    <!-- 出租中區塊結束 -->
+                                  </div>
+
+                              </div>
+
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="faq-cat-3">
+                            <div class="panel-group" id="accordion-cat-3">
+                                <div class="panel panel-default panel-faq">
+                                    <div class="panel-heading">
+                                       333333333
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="faq-cat-4">
+                            <div class="panel-group" id="accordion-cat-4">
+                                <div class="panel panel-default panel-faq">
+                                    <div class="panel-heading">
+                                       44444444444444
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="faq-cat-5">
+                            <div class="panel-group" id="accordion-cat-5">
+                                <div class="panel panel-default panel-faq">
+                                    <div class="panel-heading">
+                                       5555555555555555555
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                  </div>
+                </div>
+    </div>
+<!--/.後台版面結束-->
+</body>
+</html>

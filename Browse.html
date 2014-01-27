@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CloudSpace</title>
+  <link rel="stylesheet" href="./dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="./index.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="./dist/js/bootstrap.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+
+</head>
+<body>
+  <!--bar-->
+
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="./index.html" >CloudSpace</a>
+        </div>
+        <div class="navbar-collapse collapse">
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" data-toggle="modal" data-target="#myModal">包子</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#myModal2">進入後台</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+
+  <nav class="navbar navbar-default2 navbar-fixed-top2" role="navigation">
+    <ol class="breadcrumb">
+      <li><a href="./post-1.html">刊登</a></li>
+      <li ><a href="./make-1.html">場地規劃</a></li>
+      <li ><a href="./Data.html">輸入場地資訊</a></li>
+      <li ><a href="./time.html">租借時間設定</a></li>
+      <li ><a href="#">瀏覽</a></li>
+      <li class="active">完成</li>
+    </ol>
+  </nav>
+<!--/.左邊TABLE -->
+<div class="timecontainer">
+  <div class="row">
+    <div class="col-lg-4">
+        <div class="hero-widget well well-sm photo">
+                    <div class="icon">
+                         <i class="glyphicon glyphicon-star"></i>
+                    </div>
+                    <div class="text">
+                         <label class="text-muted">page likes</label>
+                    </div>
+                    <div class="options2">
+                        <a href="javascript:;" class="btn btn-default btn-lg"><i class="glyphicon glyphicon-search"></i> 上傳照片</a>
+                       <input type="file"/  class="btn btn-black btn-lg" id="photoinput4">
+                    </div>
+
+        </div>
+    </div>
+    <div class="col-lg-8">
+      <table class="table">
+        <h4>場地資訊</h4>
+        <tr>
+          <th>名稱:龍華科技大學</th>
+        </tr>
+        <tr><th>管理員:azxds234</th></tr>
+        <tr><th>電話:0926069356</th></tr>
+        <tr><th>地址:桃園縣龜山鄉萬壽路一段300號</th></tr>
+
+
+      </table>
+    </div>
+  </div>
+<!--/.左邊TABLE結束 -->
+<!--/資料列表-->
+    <div class="row">
+      <div class="col-md-1">
+        <nav class="navbar navbar-default3 navbar-fixed-top4" role="navigation">
+        <div id="LHUname">
+          <a href="#" type="button" class="btn btn-default3">平面圖 </a>
+              <div style="height:300px">
+                <div id="accordion">
+                    <h1>區塊一</h1>
+                    <div id="acca">       F1
+                    F2
+                    F3
+                    F4
+                    F5
+                    </div>
+
+                    <h2>區塊二</h2>
+                    <div id="acca">頁籤 2 內容</div>
+
+                    <h3>區塊三</h3>
+                    <div id="acca">頁籤 3 內容</div>
+
+                    <h4>區塊四</h4>
+                    <div id="acca">頁籤 4 內容</div>
+                </div>
+              </div>
+          <a href="#" type="button" class="btn btn-default3 prestep">修改 </a>
+          <a href="#" type="button" class="btn btn-default3 nextstep">刊登 </a>
+        </div>
+       </nav>
+      </div>
+
+      <div class="col-md-11">
+        <div id="Flbg">
+          <div id="Flcon2">
+                  <div class="thumbnail5">
+                       <div id="drag" class="square"><a href="./Browse-Data-time.html"id="info">區塊一</a></div>
+                       <div id="drag1" class="square"><a href="./Browse-Data-time.html"id="info">區塊二</a></div>
+                       <div id="drag2" class="square"><a href="./Browse-Data-time.html"id="info">區塊三</a></div>
+                       <div id="drag3" class="square"><a href="./Browse-Data-time.html"id="info">區塊四</a></div>
+                   </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+
+<script>
+$(function () {
+    $("#drag").draggable({
+        opacity: 0.5
+    });
+    $("#drag1").draggable({
+        opacity: 0.5
+    });
+    $("#drag2").draggable({
+        opacity: 0.5
+    });
+    $("#drag3").draggable({
+        opacity: 0.5
+    });
+    $("#drag").sortable({
+    containment: ".thumbnail2"
+        });
+
+    $("#accordion").accordion({
+    heightStyle: "fill",
+    collapsible: true
+  });
+     $("#flooritems1,#flooritems2,#flooritems4").sortable({
+                connectWith: "#flooritems4",
+                dropOnEmpty: true
+    });
+
+    $("#flooritems3").sortable({
+                connectWith: "#flooritems4",
+                dropOnEmpty: false
+    });
+
+    $("#flooritems1,#flooritems2,#flooritems3,#flooritems4").disableSelection();
+
+
+
+ });
+</script>
+</body>
+</html>

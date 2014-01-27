@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <title>CloudSpace</title>
+  <link rel="stylesheet" href="./dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="./index.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="./dist/js/bootstrap.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <style type="text/css">
+    body {background-image:url(http://i.imgur.com/pcenR1d.jpg);}
+  </style>
+
+
+</head>
+<body>
+
+  <!--bar-->
+  <div class="ffbg">
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="./index.html" >CloudSpace</a>
+        </div>
+        <div class="navbar-collapse collapse">
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" data-toggle="modal" data-target="#myModal">包子</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#myModal2">進入後台</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+
+
+<div class="container">
+
+
+  <nav class="navbar navbar-default2 navbar-fixed-top2" role="navigation">
+    <ol class="breadcrumb">
+      <li><a href="#">刊登</a></li>
+      <li class="active">場地規劃</li>
+      <li class="active">輸入場地資訊</li>
+      <li class="active">租借時間設定</li>
+      <li class="active">瀏覽</li>
+      <li class="active">完成</li>
+    </ol>
+  </nav>
+
+
+  <!--樓層平面選-->
+
+
+    <div id="Flcon">
+      <div class="row" >
+          <div class="col-md-6">
+              <div class="thumbnail">
+                    <div class="caption">
+                        <a href="#" data-toggle="modal" data-target="#myModal3" class="flbtn">
+                           <h4>平面圖</h4>
+                        <p>如果您的平面圖是平面為主請點選這裡</p>
+                        </a>
+                    </div>
+                    <img src="./wallpaper/flat2.png">
+                </div>
+           </div>
+           <div class="col-md-6">
+              <div class="thumbnail">
+                    <div class="caption">
+                         <a href="#" data-toggle="modal" data-target="#myModal4" class="flbtn" >
+                           <h4>樓層圖</h4>
+                        <p>如果您的平面圖是平面為主請點選這裡</p>
+                        </a>
+                    </div>
+                    <img src="./wallpaper/floor2.png">
+                </div>
+           </div>
+      </div>
+    </div>
+
+
+
+<!-- 平面圖Modal -->
+            <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+                    <h4 class="modal-title" id="myModalLabel" ><span class="glyphicon glyphicon-th-large"></span> 平面圖</h4>
+                  </div>
+                  <div class="modal-body1">
+                  <h3>請選擇要製作或上傳平面圖</h3>
+
+                  <!--body-->
+
+                  </div>
+                  <!--平面上傳或製作按鈕-->
+                      <div class="modal-footer1">
+
+                      <a href="./upload-1.html" type="button" class="btn btn-uploadplans" >上傳平面圖</a>
+                      <a href="./post-2-flat.html" type="button" class="btn btn-Drewplans" >製作平面圖</a>
+                      </div>
+
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+<!-- 樓層圖Modal -->
+            <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+                    <h4 class="modal-title" id="myModalLabel" ><span class="glyphicon glyphicon-th-large"></span> 平面圖</h4>
+                  </div>
+                  <div class="modal-body1">
+                  <h3>請選擇要製作或上傳平面圖</h3>
+
+                  <!--body-->
+
+                  </div>
+                  <!--樓層上傳或製作按鈕-->
+                      <div class="modal-footer1">
+
+                      <a href="#" data-toggle="modal" data-target="#myModal6"type="button" class="btn btn-uploadplans"data-dismiss="modal" >上傳平面圖</a>
+                      <a href="#" data-toggle="modal" data-target="#myModal5" type="button" class="btn btn-Drewplans" data-dismiss="modal">製作平面圖</a>
+                      </div>
+
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+
+
+</div>
+<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content3">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+                    <h4 class="modal-title" id="myModalLabel" ><span class="glyphicon glyphicon-indent-right"></span> 請輸入樓層</h4>
+                  </div>
+                  <div class="modal-body3">
+                  <!--body-->
+                   <form action="form">
+                   <!--輸入帳號-->
+                    <div class="caculater-Index-table">
+
+                            <table class="table tableuse-bordered table-hight">
+                               <tr>
+                                <th>
+                                  <input type="7">
+                                </th>
+                              </tr>
+                            </table>
+                            <table class="table tableuse-bordered">
+
+                                  <tr>
+                                    <th><button>7</button></th>
+                                    <th><button>8</button></th>
+                                    <th><button>9</button></th>
+                                  </tr>
+                                </th>
+                              </tr>
+                              <tr>
+                                <th>
+                                  <tr>
+                                    <th><button>4</button></th>
+                                    <th><button>5</button></th>
+                                    <th><button>6</button></th>
+                                  </tr>
+                                </th>
+                              </tr>
+                              <tr>
+                                <th>
+                                    <tr>
+                                    <th><button>1</button></th>
+                                    <th><button>2</button></th>
+                                    <th><button>3</button></th>
+                                  </tr>
+
+                            </table>
+                            <table class="table tableuse-bordered">
+                              <tr>
+                                <th>
+                                  <button class="btn0">0</button>
+                                </th>
+                              </tr>
+                            </table>
+
+
+                         </div>
+
+                   </form>
+                  </div>
+                  <!--開始使用-->
+                  <div class="modal-footer">
+
+                      <a href="./floormake-1.html" type="button" class="btn btn-yellow2" >確定</a>
+                      <a href="post-1.html" type="button" class="btn btn-yellow2" >取消</a>
+
+                  </div>
+
+
+
+
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+<div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content3">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+                    <h4 class="modal-title" id="myModalLabel" > 請輸入樓層</h4>
+                  </div>
+                  <div class="modal-body3">
+                  <!--body-->
+                   <form action="form">
+                   <!--輸入帳號-->
+                    <div class="caculater-Index-table">
+
+                            <table class="table tableuse-bordered table-hight">
+                               <tr>
+                                <th>
+                                  <input type="7">
+                                </th>
+                              </tr>
+                            </table>
+                            <table class="table tableuse-bordered">
+
+                                  <tr>
+                                    <th><button>7</button></th>
+                                    <th><button>8</button></th>
+                                    <th><button>9</button></th>
+                                  </tr>
+                                </th>
+                              </tr>
+                              <tr>
+                                <th>
+                                  <tr>
+                                    <th><button>4</button></th>
+                                    <th><button>5</button></th>
+                                    <th><button>6</button></th>
+                                  </tr>
+                                </th>
+                              </tr>
+                              <tr>
+                                <th>
+                                    <tr>
+                                    <th><button>1</button></th>
+                                    <th><button>2</button></th>
+                                    <th><button>3</button></th>
+                                  </tr>
+
+                            </table>
+                            <table class="table tableuse-bordered">
+                              <tr>
+                                <th>
+                                  <button class="btn0">0</button>
+                                </th>
+                              </tr>
+                            </table>
+
+
+                         </div>
+
+                   </form>
+                  </div>
+                  <!--開始使用-->
+                  <div class="modal-footer">
+
+                      <a href="./floorupload-1.html" type="button" class="btn btn-yellow2" >確定</a>
+                      <a href="post-1.html" type="button" class="btn btn-yellow2" >取消</a>
+
+                  </div>
+
+
+
+
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+
+
+
+
+
+<script>
+  $( document ).ready(function() {
+        $("#drag").draggable({
+        opacity: 0.5
+    });
+    $("#drag1").draggable({
+        opacity: 0.5
+    });
+    $("#drag2").draggable({
+        opacity: 0.5
+    });
+    $("#drag3").draggable({
+        opacity: 0.5
+    });
+    $("#drag").sortable({
+    containment: ".thumbnail2"
+        });
+
+    $("#accordion").accordion({
+    heightStyle: "fill",
+    collapsible: true
+  });
+    $("[rel='tooltip']").tooltip();
+
+    $('.thumbnail').hover(
+        function(){
+            $(this).find('.caption').slideDown(250); //.fadeIn(250)
+        },
+        function(){
+            $(this).find('.caption').slideUp(250); //.fadeOut(205)
+        }
+    );
+});
+</script>
+</div>
+</body>
+</html>
