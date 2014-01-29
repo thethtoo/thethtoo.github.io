@@ -161,7 +161,19 @@
 
                                 <div class="panel panel-default panel-faq">
                                     <div class="panel-heading">
-                                       <a1><span class="glyphicon glyphicon-pencil"></span>刊登記錄</a>
+                                        <table>
+                                          <tr>
+                                            <th width="85%;">
+                                             <a1><span class="glyphicon glyphicon-pencil"></span>刊登記錄</a>
+                                            </th>
+                                            <th>
+                                               <select type="text" class="form-control multiselect multiselect-icon" role="multiselect">
+                                                <option value="0" data-icon="glyphicon-camera" selected="selected">龍華科技大學</option>
+                                                <option value="1" data-icon="glyphicon-link">輔仁大學</option>
+                                              </select>
+                                            </th>
+                                          </tr>
+                                        </table>
                                     </div>
                                 </div>
 
@@ -172,7 +184,7 @@
                                             <li class="active"><a href="#tab_a" data-toggle="pill">刊登中的場地</a></li>
                                             <li><a href="#tab_b" data-toggle="pill">審核中的場地</a></li>
                                             <li><a href="#tab_c" data-toggle="pill">出租中的場地</a></li>
-                                            <li><a href="javascript:;">已下架場地</a></li>
+                                            <li><a href="#tab_d" data-toggle="pill">已下架場地</a></li>
                                             <li class="nav-divider"></li>
                                         </ul>
                                     </nav>
@@ -355,6 +367,35 @@
                                       </div>
                                     </div>
                                     <!-- 出租中區塊結束 -->
+                                    <!-- 已下架區塊開始 -->
+                                    <div class="tab-pane" id="tab_d">
+                                      <div class="col-md-9 barbar2">
+                                         <table class="table table-hover">
+                                           <tr>
+                                                <th>場地編號</th>
+                                                <th>狀態</th>
+                                                <th>下架時間</th>
+                                                <th width="50%;">場地</th>
+                                                <th>價錢</th>
+                                                <th>修改編輯</th>
+                                           </tr>
+                                           <tr>
+                                             <th><input type="checkbox" id="checkbox6" />A00001</th>
+                                             <th>已下架</th>
+                                             <th>2013/10/29<br/>18:39:00</th>
+                                             <th>龍華科技大學S棟7樓701</th>
+                                             <th>每小時399<br/>一天:2000</th>
+                                             <th><span class="glyphicon glyphicon-cog"></span><span class="glyphicon glyphicon-dashboard"></span><span class="glyphicon glyphicon-pencil"></span></th>
+                                           </tr>
+                                          </table>
+                                      </div>
+                                            <div class="col-md-9">
+                                              <input type="checkbox" id="checkbox"/>全選
+                                              <button>下架</button>
+                                              <button>取消</button>
+                                            </div>
+                                      </div>
+                                    <!-- 已下架區塊開始 -->
                                   </div>
 
                               </div>
@@ -364,20 +405,152 @@
 
                         <div class="tab-pane fade" id="faq-cat-3">
                             <div class="panel-group" id="accordion-cat-3">
+
                                 <div class="panel panel-default panel-faq">
                                     <div class="panel-heading">
-                                       333333333
+                                      <table>
+                                          <tr>
+                                            <th width="85%;">
+                                             <a1><span class="glyphicon glyphicon-book"></span>訊息通知</a>
+                                            </th>
+                                          </tr>
+                                      </table>
                                     </div>
                                 </div>
+                                <div class="row">
+                                  <div class="col-md-2">
+                                    <nav class="nav-sidebar">
+                                        <ul class="nav nav-stacked pull-right">
+                                            <li class="active"><a href="#tab_aaa" data-toggle="pill">我的訂單</a></li>
+                                            <li><a href="#tab_bbb" data-toggle="pill">審核中的場地</a></li>
+                                            <li><a href="#tab_ccc" data-toggle="pill">出租中的場地</a></li>
+                                        </ul>
+                                    </nav>
+                                  </div>
+                                  <div class="tab-content col-md-10">
+                                    <div class="tab-pane active" id="tab_aaa">
+                                          <div class="col-md-9 barbar2">
+                                            <table class="table table-hover">
+                                             <tr>
+                                                  <th width="20%;">寄件事由</th>
+                                                  <th width="50%;">標頭</th>
+                                                  <th>狀態</th>
+                                                  <th>日期</th>
+                                             </tr>
+                                            </table>
+                                         </div>
+                                    </div>
+                                    <div class="tab-pane active" id="tab_bbb">
+                                          <div class="col-md-9 barbar2">
+                                            <table class="table table-hover">
+                                             <tr>
+                                                  <th width="20%;">寄件事由</th>
+                                                  <th width="50%;">標頭</th>
+                                                  <th>狀態</th>
+                                                  <th>日期</th>
+                                             </tr>
+                                            </table>
+                                         </div>
+                                    </div>
+                                    <div class="tab-pane active" id="tab_ccc">
+                                          <div class="col-md-9 barbar2">
+                                            <table class="table table-hover">
+                                             <tr>
+                                                  <th width="20%;">寄件事由</th>
+                                                  <th width="50%;">標頭</th>
+                                                  <th>狀態</th>
+                                                  <th>日期</th>
+                                             </tr>
+                                            </table>
+                                         </div>
+                                    </div>
+                                  </div>
+
+                                </div>
+
                             </div>
                         </div>
                         <div class="tab-pane fade" id="faq-cat-4">
                             <div class="panel-group" id="accordion-cat-4">
-                                <div class="panel panel-default panel-faq">
+                              <div class="panel panel-default panel-faq">
                                     <div class="panel-heading">
-                                       44444444444444
+                                         <table>
+                                          <tr>
+                                            <th width="85%;">
+                                             <a1><span class="glyphicon glyphicon-comment"></span>訊息通知</a>
+                                            </th>
+                                          </tr>
+                                        </table>
                                     </div>
                                 </div>
+
+                                <div class="row">
+                                  <div class="col-md-2">
+                                    <nav class="nav-sidebar">
+                                        <ul class="nav nav-stacked pull-right">
+                                            <li class="active"><a href="#tab_aa" data-toggle="pill">交易簡訊</a></li>
+                                            <li><a href="#tab_bb" data-toggle="pill">客服簡訊</a></li>
+                                            <li><a href="#tab_cc" data-toggle="pill">到期通知</a></li>
+                                        </ul>
+                                    </nav>
+                                  </div>
+                                  <div class="tab-content col-md-10">
+                                    <div class="tab-pane active" id="tab_aa">
+                                          <div class="col-md-9 barbar2">
+                                            <table class="table table-hover">
+                                             <tr>
+                                                  <th width="20%;">寄件事由</th>
+                                                  <th width="50%;">標頭</th>
+                                                  <th>狀態</th>
+                                                  <th>日期</th>
+                                             </tr>
+                                             <tr>
+                                                <th><a href="">已付款</a></th>
+                                                <th>您的場地A00005租借者已付款</th>
+                                                <th>未讀</th>
+                                                <th>2013/10/29 06:30</th>
+
+                                              </tr>
+                                            </table>
+                                         </div>
+                                    </div>
+                                    <!-- 交易簡訊開始 -->
+                                    <div class="tab-pane" id="tab_bb">
+                                          <div class="col-md-9 barbar2">
+                                            <table class="table table-hover">
+                                             <tr>
+                                                  <th width="20%;">寄件事由</th>
+                                                  <th width="50%;">標頭</th>
+                                                  <th>狀態</th>
+                                                  <th>日期</th>
+                                             </tr>
+                                            </table>
+                                         </div>
+                                    </div>
+                                     <!-- 交易簡訊結束 -->
+                                    <!-- 客服簡訊開始 -->
+                                    <div class="tab-pane" id="tab_cc">
+                                        <div class="col-md-9 barbar2">
+                                           <table class="table table-hover">
+                                             <tr>
+                                                  <th width="20%;">寄件事由</th>
+                                                  <th width="50%;">標頭</th>
+                                                  <th>狀態</th>
+                                                  <th>日期</th>
+                                             </tr>
+                                             <tr>
+                                                  <th><a href="">即將到期</a></th>
+                                                  <th width="50%;">您的場地A00005即將到期</th>
+                                                  <th>即將到期</th>
+                                                  <th>剩餘:00:01:59</th>
+                                             </tr>
+                                            </table>
+                                         </div>
+                                    </div>
+                                    <!-- 出租中區塊結束 -->
+
+
+                              </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="faq-cat-5">

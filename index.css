@@ -15,6 +15,11 @@
   .tableuse-bordered td {
     border: 0px  !important;
   }
+.tableno-bordered th,
+  .tableno-bordered tr {
+    border: 1px solid #FFFFFF !important;
+  }
+
 
 .container {
   padding-right: 15px;
