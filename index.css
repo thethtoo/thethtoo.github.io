@@ -730,6 +730,10 @@ background-color: #FeF30a;
   height:400px;
   overflow: auto;
 }
+.barbar3{
+  overflow: auto;
+
+}
 .img200-250{
   padding: 80px;
 }
