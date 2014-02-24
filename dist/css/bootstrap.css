@@ -5162,6 +5162,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   /*background-image: url(http://i.imgur.com/QXACsxf.jpg);*/
   background-color: #FFFF75;
   border-color: #D8CD01;
+  z-index: 1;
 }
 .navbar-default3 {
   background-color: #FFFFFF;
@@ -5384,9 +5385,9 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .breadcrumb {
 
-  font-size: 20px;
-  padding: 8px 15px;
-  margin-bottom: 20px;
+  font-size: 15px;
+  padding-top: 10px;
+  margin-bottom: 0px;
   list-style: none;
 
   border-radius: 4px;

@@ -1,20 +1,17 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+
+    <meta charset="UTF-8">
   <title>CloudSpace</title>
   <link rel="stylesheet" href="./dist/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="./index.css">
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="./dist/js/bootstrap.js"></script>
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-
-
 </head>
 <body>
-    <!--bar-->
-
-  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -22,7 +19,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+
           <a href="./index.html" >CloudSpace</a>
+
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -30,143 +29,144 @@
             <li><a href="./Account.html" >進入後台</a></li>
           </ul>
         </div><!--/.nav-collapse -->
-  </div>
-  <nav class="navbar navbar-default2 navbar-fixed-top2" role="navigation">
-    <ol class="breadcrumb">
-      <li><a href="./post-1.html">刊登</a></li>
-      <li ><a href="./make-1.html">場地規劃</a></li>
-      <li ><a href"active">輸入場地資訊</a></li>
-      <li class="active">租借時間設定</li>
-      <li class="active">瀏覽</li>
-      <li class="active">完成</li>
-    </ol>
-  </nav>
-  <!--/.左邊TABLE -->
- <nav class="navbar navbar-default3 navbar-fixed-top3" role="navigation">
-  <div id="LHUname">
-    <a href="#" type="button" class="btn btn-default3">平面圖 </a>
-    <div style="height:300px">
-    <div id="accordion">
-        <h1>區塊一</h1>
-        <div id="acca">       F1
-        F2
-        F3
-        F4
-        F5
+    </div>
+    <div class="maincointer">
+        <div class="row">
+          <nav class="navbar navbar-default2 navbar-fixed-top2" role="navigation">
+          <ol class="breadcrumb">
+              <li><a href="./post-1.html">刊登</a></li>
+              <li ><a href="./make-1.html">場地規劃</a></li>
+              <li ><a href"active">輸入場地資訊</a></li>
+              <li class="active">租借時間設定</li>
+              <li class="active">瀏覽</li>
+              <li class="active">完成</li>
+          </ol>
+          </nav>
         </div>
-
-        <h2>區塊二</h2>
-        <div id="acca">頁籤 2 內容</div>
-
-        <h3>區塊三</h3>
-        <div id="acca">頁籤 3 內容</div>
-
-        <h4>區塊四</h4>
-        <div id="acca">頁籤 4 內容</div>
-    </div>
-    </div>
-    <a href="./post-2-flat.html" type="button" class="btn btn-default3 prestep">上一步</a>
-    <a href="./timemake-1.html" type="button" class="btn btn-default3 nextstep">下一步 </a>
-  </div>
- </nav>
-<!--/.左邊TABLE結束 -->
-<div class="well1 col-md-8 col-md-offset-2">
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="hero-widget well1 well1-sm">
-        <div class="icon">
-             <i class="glyphicon glyphicon-user"></i>
-        </div>
-      </div>
-      <div class="options3">
-        <a href="#" class="btn btn-black btn-lg"><i class="glyphicon glyphicon-plus"></i> 上傳照片</a>
-        <input type="file"/  class="btn btn-black btn-lg" id="photoinput">
-        <form>
-
-</form>
-      </div>
-    </div>
-    <div class="col-sm-8 contact-form">
       <div class="row">
-        <div class="col-xs-6 col-md-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="單位名稱" type="text" required autofocus />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-3">
-            <select type="text" class="form-control multiselect multiselect-icon" role="multiselect">
-              <option value="0" data-icon="glyphicon-camera" selected="selected">新北市</option>
-              <option value="1" data-icon="glyphicon-link">台北市</option>
-              <option value="2" data-icon="glyphicon-pencil">台中市</option>
-              <option value="3" data-icon="glyphicon-shopping-cart">台南市</option>
-            </select>
-        </div>
-        <div class="col-md-3">
-            <select type="text" class="form-control multiselect multiselect-icon" role="multiselect">
-              <option value="0" data-icon="glyphicon-camera" selected="selected">中和區</option>
-              <option value="1" data-icon="glyphicon-link">桃園縣</option>
-              <option value="2" data-icon="glyphicon-pencil">淡水縣</option>
-              <option value="3" data-icon="glyphicon-shopping-cart">板橋區</option>
-            </select>
-        </div>
-        <div class="col-xs-4 col-md-4 form-group">
-          <input class="form-control" id="name" name="name" placeholder="請輸入完整地址" type="text" required autofocus />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-10 col-md-10 form-group">
-          <table>
-            <tr>
-              <th>
-                <input type="checkbox"> 公園
-              </th>
-              <th>
-                <input type="checkbox"> 運動場地
-              </th>
-              <th>
-                <input type="checkbox"> 婚宴場地
-              </th>
-              <th>
-                <input type="checkbox"> 展演中心
-              </th>
-            <tr>
-          </table>
-        </div>
-        <div class="col-xs-10 col-md-10 form-group">
-          <table>
-            <tr>
-              <th>
-                <input type="checkbox"> 校園
-              </th>
-              <th>
-                <input type="checkbox"> 戶外
-              </th>
-              <th>
-                <input type="checkbox"> 公司大樓
-              </th>
+        <div class="col-md-2">
+          <div class="row">
+            <a href="#" type="button" class="btn btn-default3">平面圖 </a>
+            <div class="barbar5">
 
-            <tr>
-          </table>
-        </div>
-      </div>
-    </div>
-  </div>
+              <div id="accordion">
+                <h1>區塊一</h1>
+                <div id="acca">頁籤 1 內容</div>
 
+                <h2>區塊二</h2>
+                <div id="acca">頁籤 2 內容</div>
 
-      <div class="row paintcontrol" >
-          <div class="col-md-10">
-              <div class="thumbnail4">
-                   <div id="drag" class="square"><a href="./Data-block-1.html"id="info">區塊一</a></div>
-                   <div id="drag1" class="square"><a href="./Data-block-1.html"id="info">區塊二</a></div>
-                   <div id="drag2" class="square"><a href="./Data-block-1.html"id="info">區塊三</a></div>
-                   <div id="drag3" class="square"><a href="./Data-block-1.html"id="info">區塊四</a></div>
-               </div>
+                <h3>區塊三</h3>
+                <div id="acca">頁籤 3 內容</div>
+
+                <h4>區塊四</h4>
+                <div id="acca">頁籤 4 內容</div>
+                </div>
+            </div>
           </div>
-      </div>
+          <div class="row">
+            <a href="./post-2-flat.html" type="button" class="btn btn-default3 ">上一步</a>
+            <a href="./timemake-1.html" type="button" class="btn btn-default3 ">下一步 </a>
+          </div>
+        </div>
 
 
+        <div class="col-md-10">
+          <!-- data start -->
+          <div class="row well1">
+            <div class="col-sm-4">
+              <div class="hero-widget well1 well1-sm">
+                <div class="icon">
+                     <i class="glyphicon glyphicon-user"></i>
+                </div>
+              </div>
+              <div class="options3">
+                <a href="#" class="btn btn-black btn-lg"><i class="glyphicon glyphicon-plus"></i> 上傳照片</a>
+                <input type="file"/  class="btn btn-black btn-lg" id="photoinput">
 
-</div>
+              </div>
+            </div>
+            <div class="col-sm-8 contact-form">
+              <div class="row">
+                <div class="col-xs-6 col-md-6 form-group">
+                  <input class="form-control" id="name" name="name" placeholder="單位名稱" type="text" required autofocus />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                    <select type="text" class="form-control multiselect multiselect-icon" role="multiselect">
+                      <option value="0" data-icon="glyphicon-camera" selected="selected">新北市</option>
+                      <option value="1" data-icon="glyphicon-link">台北市</option>
+                      <option value="2" data-icon="glyphicon-pencil">台中市</option>
+                      <option value="3" data-icon="glyphicon-shopping-cart">台南市</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select type="text" class="form-control multiselect multiselect-icon" role="multiselect">
+                      <option value="0" data-icon="glyphicon-camera" selected="selected">中和區</option>
+                      <option value="1" data-icon="glyphicon-link">桃園縣</option>
+                      <option value="2" data-icon="glyphicon-pencil">淡水縣</option>
+                      <option value="3" data-icon="glyphicon-shopping-cart">板橋區</option>
+                    </select>
+                </div>
+                <div class="col-xs-4 col-md-4 form-group">
+                  <input class="form-control" id="name" name="name" placeholder="請輸入完整地址" type="text" required autofocus />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-10 col-md-10 form-group">
+                  <table>
+                    <tr>
+                      <th>
+                        <input type="checkbox"> 公園
+                      </th>
+                      <th>
+                        <input type="checkbox"> 運動場地
+                      </th>
+                      <th>
+                        <input type="checkbox"> 婚宴場地
+                      </th>
+                      <th>
+                        <input type="checkbox"> 展演中心
+                      </th>
+                    <tr>
+                  </table>
+                </div>
+                <div class="col-xs-10 col-md-10 form-group">
+                  <table>
+                    <tr>
+                      <th>
+                        <input type="checkbox"> 校園
+                      </th>
+                      <th>
+                        <input type="checkbox"> 戶外
+                      </th>
+                      <th>
+                        <input type="checkbox"> 公司大樓
+                      </th>
+
+                    <tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- data over -->
+          <div class="row" >
+            <div class="col-md-12 barbar4">
+                <div class="thumbnail2">
+                     <div id="drag" class="square"><a href="./Data-block-1.html"id="info">區塊一</a></div>
+                     <div id="drag1" class="square"><a href="./Data-block-1.html"id="info">區塊二</a></div>
+                     <div id="drag2" class="square"><a href="./Data-block-1.html"id="info">區塊三</a></div>
+                     <div id="drag3" class="square"><a href="./Data-block-1.html"id="info">區塊四</a></div>
+
+                 </div>
+             </div>
+             </div>
+            </div>
+          </div>
+    </div>
+
 <script>
 $(function () {
     $("#drag").draggable({
@@ -183,23 +183,13 @@ $(function () {
     });
     $("#drag").sortable({
     containment: ".thumbnail2"
-        });
+    });
 
     $("#accordion").accordion({
     heightStyle: "fill",
     collapsible: true
-  });
-     $("#flooritems1,#flooritems2,#flooritems4").sortable({
-                connectWith: "#flooritems4",
-                dropOnEmpty: true
     });
 
-    $("#flooritems3").sortable({
-                connectWith: "#flooritems4",
-                dropOnEmpty: false
-    });
-
-    $("#flooritems1,#flooritems2,#flooritems3,#flooritems4").disableSelection();
 
 
 
