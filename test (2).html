@@ -7,33 +7,227 @@
   <link rel="stylesheet" type="text/css" href="./index.css">
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="./dist/js/bootstrap.js"></script>
-  <script src="./jquary.hoverpulse.js"></script>
 
   <script type="text/javascript">
 $(function(){
-    $('div.thumb img').hoverpulse().each(function() {
-      var $img = $(this);
-      var link = $img.attr('data-link');
-      $img.attr('title','Goto: ' + link);
-      $img.click(function() {
-        window.open(link);
-        return false;
-      });
+    $("#gotop").click(function(){
+        jQuery("html,body").animate({
+            scrollTop:0
+        },1000);
     });
-
-
-
+    $(window).scroll(function() {
+        if ( $(this).scrollTop() > 300){
+            $('#gotop').fadeIn("fast");
+        } else {
+            $('#gotop').stop().fadeOut("fast");
+        }
+    });
 });
 </script>
 </head>
 <body>
-  <div class="col-lg-6">
-    <div class="mapbg-1">
-<div id="thumbs">
-                <div class="thumb"><img src="http://i.imgur.com/ffRvt9S.png" width="64" height="64" data-link="./RentIndex-1.html"    /></div>
+<div id="gotop">˄</div>
+ <!--bar-->
+ <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="./index.html" >CloudSpace</a>
+        </div>
+        <div class="navbar-collapse collapse">
 
-      </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" data-toggle="modal" data-target="#myModal">包子</a></li>
+            <li><a href="./Account.html" >進入後台</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
     </div>
+
+
+<!--左邊字+button-->
+<div id="firstbody">
+<div class="container">
+  <div class="row">
+      <div class="col-md-7">
+                <div class="row">
+                         <div class="col-md-12">
+                                      <div id="first-a">
+                                        <h1 id="first-h1">場地租借</h1>
+                                        <a id="a1">全國場地租借系統</a>
+                                        <a id="a2">簡單方便</a>
+                                      </div>
+                         </div>
+                </div>
+
+                  <div class="row">
+                      <div class="col-md-12">
+                        <div id="first-btn">
+
+                                    <a href="./post-1.html" type="button" class="btn btn-warning" >刊登</a>
+                                    <a href="./RentIndex.html" type="button" class="btn btn-warning" >租借</a>
+                         </div>
+                      </div>
+                  </div>
+      </div>
+ <!--右邊電腦圖示-->
+      <div class="col-md-5">
+
+        <img src="http://i.imgur.com/6oVvRGt.png" id="img1">
+      </div>
+
 </div>
+
+</div>
+<!--六大功能介紹-->
+<div class="row">
+  <div class="col-md-12">
+
+        <div id="sixpoint">
+          <ul class="nav nav-pills">
+            <li ><a href="#sixphoto-oneleft"><img src="./wallpaper/11.png" alt="..." class="img-circle"></a></li>
+            <li ><a href="#sixphoto-twoleft"><img src="./wallpaper/22.png" alt="..." class="img-circle"></a></li>
+            <li ><a href="#sixphoto-threeleft"><img src="./wallpaper/33.png" alt="..." class="img-circle"></a></li>
+            <li ><a href="#sixphoto-fourleft"><img src="./wallpaper/44.png" alt="..." class="img-circle"></a></li>
+            <li ><a href="#sixphoto-fiveleft"><img src="./wallpaper/55.png" alt="..." class="img-circle"></a></li>
+            <li ><a href="#sixphoto-sixleft"><img src="./wallpaper/66.png" alt="..." class="img-circle"></a></li>
+
+          </ul>
+        </div>
+
+
+ </div>
+</div>
+</div>
+
+
+<!--六大功能詳細介紹-->
+<div class="row">
+  <div class="col-md-6">
+        <div id="sixphoto-oneleft">
+          <img src="./wallpaper/nonlogin_2in1function1.png" alt="..." >
+        </div>
+  </div>
+
+ <div class="col-md-6">
+        <div id="sixphoto-oneright">
+          <ul style="list-style-type:none">
+            <li><span class="glyphicon glyphicon-th"></span>製作平面圖</li>
+            <li><p>刊登者:直覺設計獨一無二的平面圖刊登 場地簡單更美好。</p></li>
+            <li><p> 租借者:更容易看到刊登者的場地設計，平面圖一覽無遺</p></li>
+
+          </ul>
+        </div>
+ </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div id="sixphoto-twoleft">
+      <ul style="list-style-type:none">
+            <li><span class="glyphicon glyphicon-dashboard"></span>時間規劃</li>
+            <li><p>刊登者:一隻手指就可以完成最完善的出租時間，規畫無壓力。</p></li>
+            <li><p>租借者:可租借、已租借、審核中一次看清一次租借。</p></li>
+
+      </ul>
+     </div>
+  </div>
+
+ <div class="col-md-6">
+        <div id="sixphoto-tworight">
+
+          <img src="./wallpaper/nonlogin_2in1function1.png" alt="..." >
+        </div>
+ </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+        <div id="sixphoto-threeleft">
+          <img src="./wallpaper/nonlogin_2in1function1.png" alt="..." >
+        </div>
+  </div>
+
+ <div class="col-md-6">
+        <div id="sixphoto-threeright">
+          <ul style="list-style-type:none">
+            <li><span class="glyphicon glyphicon-usd"></span>自由收費</li>
+            <li><p>刊登者自由收費系統,租借者瀏覽系統。平台上就可以完成交易。</p></li>
+
+          </ul>
+        </div>
+ </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div id="sixphoto-fourleft">
+      <ul style="list-style-type:none">
+            <li><span class="glyphicon glyphicon-user"></span>後台管理</li>
+            <li><p>刊登者：可自由刊登，上下架場地，編輯場地。</p></li>
+            <li><p>租借者 ：簡易的下標匯款資訊，與在線刊登者即時交流系統。交易可以更簡單！　</p></li>
+
+      </ul>
+     </div>
+  </div>
+
+ <div class="col-md-6">
+        <div id="sixphoto-fourright">
+
+          <img src="./wallpaper/nonlogin_2in1function1.png" alt="..." >
+        </div>
+ </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+        <div id="sixphoto-fiveleft">
+          <img src="./wallpaper/nonlogin_2in1function1.png" alt="..." >
+        </div>
+  </div>
+
+ <div class="col-md-6">
+        <div id="sixphoto-fiveright">
+          <ul style="list-style-type:none">
+            <li><span class="glyphicon glyphicon-check"></span>簡單操作</li>
+            <li><p>刊登者:點擊滑鼠就可以完成最完善的場地設計，規畫無壓力。四大步驟完成刊登,簡單明瞭的操作.規劃是一種享受。</p></li>
+
+          </ul>
+        </div>
+ </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div id="sixphoto-sixleft">
+      <ul style="list-style-type:none">
+            <li><span class="glyphicon glyphicon-search"></span>地圖搜尋</li>
+            <li><p>地圖搜尋:獨家過濾性搜尋,地圖區塊點擊
+設計，最簡單的方式找到你要的場地。</p></li>
+                </ul>
+     </div>
+  </div>
+
+ <div class="col-md-6">
+        <div id="sixphoto-sixright">
+
+          <img src="./wallpaper/nonlogin_2in1function1.png" alt="..." >
+        </div>
+ </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
