@@ -7,9 +7,19 @@
   <link rel="stylesheet" type="text/css" href="./index.css">
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="./dist/js/bootstrap.js"></script>
+  <script src="./jquary.hoverpulse.js"></script>
 
   <script type="text/javascript">
 $(function(){
+      $('div.thumb img').hoverpulse().each(function() {
+          var $img = $(this);
+          var link = $img.attr('data-link');
+          $img.attr('title','Goto: ' + link);
+          $img.click(function() {
+            window.open(link);
+            return false;
+          });
+        });
     $("#gotop").click(function(){
         jQuery("html,body").animate({
             scrollTop:0
@@ -110,7 +120,7 @@ $(function(){
        </div>
     </div>
     <div class="row ">
-       <div class="col-lg-5">
+       <div class="col-md-6">
           <div class="col-md-12">
             <table class="table table-bordered tablemove">
               <tr><th class="thcolor"><h4>場地類型</h4></th></tr>
@@ -176,8 +186,13 @@ $(function(){
             </table>
           </div>
        </div>
-       <div class="col-lg-7">
-         <a href="./RentIndex-2.html"><img class="map"src="./wallpaper/map-1.jpg" ></a>
+       <div class="col-md-6">
+         <div class="mapbg-2">
+            <div id="thumbs2">
+                     <div class="thumb"><img src="http://i.imgur.com/avmX9nO.png" width="90" height="90" data-link="./RentIndex-2.html"    /></div>
+            </div>
+          </div>
+
        </div>
 
 

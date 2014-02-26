@@ -5155,7 +5155,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-default {
   background-color: #000000;
   border-color: #757000;
-  z-index: 100;
+  z-index: 1000;
 
 }
 .navbar-default2 {
@@ -5750,7 +5750,7 @@ a.list-group-item.active > .badge,
 }
 
 .thumbnail {
-  z-index: 2;
+  z-index: 0;
   position:relative;
   left:-50px;
    top:40px;

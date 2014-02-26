@@ -5,11 +5,22 @@
   <title>CloudSpace</title>
   <link rel="stylesheet" href="./dist/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="./index.css">
-  <script src="https://code.jquery.com/jquery.js"></script>
+ <script src="https://code.jquery.com/jquery.js"></script>
   <script src="./dist/js/bootstrap.js"></script>
+  <script src="./jquary.hoverpulse.js"></script>
 
   <script type="text/javascript">
 $(function(){
+   $('div.thumb img').hoverpulse().each(function() {
+      var $img = $(this);
+      var link = $img.attr('data-link');
+      $img.attr('title','Goto: ' + link);
+      $img.click(function() {
+        window.open(link);
+        return false;
+      });
+    });
+
     $("#gotop").click(function(){
         jQuery("html,body").animate({
             scrollTop:0
@@ -110,7 +121,7 @@ $(function(){
        </div>
     </div>
     <div class="row ">
-       <div class="col-lg-5">
+       <div class="col-md-6">
           <div class="col-md-12">
             <table class="table table-bordered tablemove">
               <tr><th class="thcolor"><h4>場地類型</h4></th></tr>
@@ -176,8 +187,12 @@ $(function(){
             </table>
           </div>
        </div>
-       <div class="col-lg-7">
-         <a href="RentIndex-1.html"><img class="map"src="./wallpaper/map.jpg" ></a>
+       <div class="col-md-6">
+         <div class="mapbg-1">
+            <div id="thumbs">
+                     <div class="thumb"><img src="http://i.imgur.com/ffRvt9S.png" width="64" height="64" data-link="./RentIndex-1.html"    /></div>
+            </div>
+          </div>
        </div>
 
 

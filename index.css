@@ -986,3 +986,28 @@ background-color: #FeF30a;
   overflow: auto;
   height:10px;
 }
+#thumbs{
+  position: relative;
+  left: 310px;
+  top:40px;
+}
+#thumbs2{
+  position: relative;
+  left: 310px;
+  top:80px;
+}
+.mapbg-1{
+  background-image: url('http://i.imgur.com/kkP8LnR.jpg');
+  width: 600px;
+  height : 577px;
+
+
+}
+.mapbg-2{
+  background-image: url('http://i.imgur.com/pmtAPBQ.jpg');
+  width: 600px;
+  height : 577px;
+  background-repeat: no-repeat;
+
+
+}
